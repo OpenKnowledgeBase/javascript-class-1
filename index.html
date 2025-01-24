@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics for Chris</title>
+  <style>
+    /* Minimalist UI Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #007BFF;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JavaScript Basics for Chris</h1>
+    <p>Let's learn JavaScript step-by-step! 🚀</p>
+  </header>
+
+  <main>
+    <!-- Step 1: What is JavaScript? -->
+    <section>
+      <h2>Step 1: What is JavaScript?</h2>
+      <p>JavaScript is like magic 🪄 for websites! It makes websites interactive. Imagine clicking a button, and something cool happens — that's JavaScript doing its job.</p>
+    </section>
+
+    <!-- Step 2: Let's Write Some Code! -->
+    <section>
+      <h2>Step 2: Let's Write Some Code!</h2>
+      <p>We'll start by printing a message in the browser console.</p>
+      <p>👉 <strong>Open your browser</strong>: Right-click on the page > Select <strong>"Inspect"</strong> > Go to the <strong>"Console"</strong> tab.</p>
+      <p>Now type this and hit Enter:</p>
+      <pre><code>console.log("Hello, Chris! Let's learn JavaScript!");</code></pre>
+      <p>🎉 The console will say: <code>Hello, Chris! Let's learn JavaScript!</code></p>
+    </section>
+
+    <!-- Step 3: Variables (Our Treasure Box 🧰) -->
+    <section>
+      <h2>Step 3: Variables (Our Treasure Box 🧰)</h2>
+      <p><strong>Variables</strong> are like boxes where we store information.</p>
+      <pre><code>let myName = "Chris"; // This is your name
+let myAge = 8;        // Your age
+console.log(myName, myAge); // Prints: Chris 8</code></pre>
+      <p>💡 <strong>Explanation</strong>: <code>let</code> creates a box (variable). <code>myName</code> stores <code>"Chris"</code>, and <code>myAge</code> stores <code>8</code>. You can open the box anytime using <code>console.log</code>.</p>
+    </section>
+
+    <!-- Step 4: Functions (Our Magic Spells 🪄) -->
+    <section>
+      <h2>Step 4: Functions (Our Magic Spells 🪄)</h2>
+      <p><strong>Functions</strong> are like reusable recipes.</p>
+      <pre><code>function greet() {
+  console.log("Hi, Chris! You're awesome!");
+}
+greet(); // Call the function to see the magic</code></pre>
+      <p>💡 <strong>Explanation</strong>: <code>function greet()</code> creates the magic spell. <code>greet();</code> casts the spell.</p>
+    </section>
+
+    <!-- Step 5: Conditions (Decisions 🤔) -->
+    <section>
+      <h2>Step 5: Conditions (Decisions 🤔)</h2>
+      <p>JavaScript can make decisions using <strong>if</strong>.</p>
+      <pre><code>let age = 8;
+if (age < 18) {
+  console.log("You're still a kid!");
+} else {
+  console.log("You're an adult now!");
+}</code></pre>
+      <p>💡 <strong>Explanation</strong>: If <code>age</code> is less than 18, it says "You're still a kid!" Otherwise, it says "You're an adult now!"</p>
+    </section>
+
+    <!-- Step 6: Loops (Doing Things Again & Again 🔄) -->
+    <section>
+      <h2>Step 6: Loops (Doing Things Again & Again 🔄)</h2>
+      <p><strong>Loops</strong> let us repeat actions.</p>
+      <pre><code>for (let i = 1; i <= 5; i++) {
+  console.log("I love coding! 🖥️");
+}</code></pre>
+      <p>💡 <strong>Explanation</strong>: <code>for</code> repeats the code inside it. Here, it runs 5 times and prints "I love coding! 🖥️" each time.</p>
+    </section>
+
+    <!-- Step 7: Arrays (A List of Things 🗂️) -->
+    <section>
+      <h2>Step 7: Arrays (A List of Things 🗂️)</h2>
+      <p><strong>Arrays</strong> store multiple items in one variable.</p>
+      <pre><code>let fruits = ["Apple", "Mango", "Banana"];
+console.log(fruits[0]); // Apple
+console.log(fruits[1]); // Mango
+console.log(fruits[2]); // Banana</code></pre>
+      <p>💡 <strong>Explanation</strong>: <code>fruits</code> is like a basket 🧺 holding <code>"Apple"</code>, <code>"Mango"</code>, and <code>"Banana"</code>. Use <code>fruits[0]</code> to pick the first item, <code>fruits[1]</code> for the second, and so on.</p>
+    </section>
+
+    <!-- Step 8: Objects (Boxes with Labels 📦) -->
+    <section>
+      <h2>Step 8: Objects (Boxes with Labels 📦)</h2>
+      <p><strong>Objects</strong> store data with <strong>keys</strong> (labels) and <strong>values</strong> (info).</p>
+      <pre><code>let car = {
+  brand: "Tesla",
+  model: "Model 3",
+  year: 2023
+};
+console.log(car.brand); // Tesla
+console.log(car.model); // Model 3</code></pre>
+      <p>💡 <strong>Explanation</strong>: <code>car</code> is a box with labels: <code>brand</code>, <code>model</code>, and <code>year</code>.</p>
+    </section>
+
+    <!-- Step 9: DOM (Talking to the Web Page 🌐) -->
+    <section>
+      <h2>Step 9: DOM (Talking to the Web Page 🌐)</h2>
+      <p>JavaScript lets us change the web page directly.</p>
+      <p>Try this in the console:</p>
+      <pre><code>document.body.style.background = "lightblue"; // Changes background color</code></pre>
+      <p>💡 This tells the browser: "Hey, change the background color!"</p>
+    </section>
+
+    <!-- Homework (Your Mission 🕵️‍♂️) -->
+    <section>
+      <h2>Homework (Your Mission 🕵️‍♂️)</h2>
+      <ol>
+        <li>Try changing the background color of any website using <code>document.body.style.background</code>.</li>
+        <li>Write a function that says <code>"I love JavaScript!"</code> 10 times using a loop.</li>
+      </ol>
+      <button onclick="runHomework()">Run Homework Example</button>
+      <pre id="homework-output" style="display: none;"></pre>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript for Homework Example
+    function runHomework() {
+      let output = "";
+      for (let i = 1; i <= 10; i++) {
+        output += "I love JavaScript! 🖥️\n";
+      }
+      document.getElementById("homework-output").innerText = output;
+      document.getElementById("homework-output").style.display = "block";
+    }
+  </script>
+</body>
+</html>
